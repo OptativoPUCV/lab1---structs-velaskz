@@ -79,3 +79,14 @@ Tue 15 Aug 2023 05:41:55 PM UTC:
  tests:  0|5
 total_score: 20/70
 c7f3bbd
+Tue 15 Aug 2023 06:00:45 PM UTC: 
+ exercises.c | 17 +++++++++++++++++
+ 1 file changed, 17 insertions(+)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:68:14: error: ‘j’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+   68 |       pares[j++] = arr[i];
+      |             ~^~
+cc1: all warnings being treated as errors
+Compilation failed
+06feb72

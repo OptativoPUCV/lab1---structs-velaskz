@@ -29,13 +29,18 @@ Descripción: Escribe una función que tome un arreglo y su tamaño, y luego
 invierta el orden de sus elementos.
 */
 void reverseArray(int arr[], int size) {
-  int arreglo2[size];
-  int size2 = sizeof(arreglo2) / sizeof(arreglo2[0]);
-  int i,j;
-  for (i = size - 1, j = 0; i >= 0 && j < size2; i--, j++){
-    arreglo2[j] = arr[i];
-  }
+    int arreglo2[size];
+    int size2 = sizeof(arreglo2) / sizeof(arreglo2[0]);
+    
+    for (int i = size - 1, j = 0; i >= 0 && j < size2; i--, j++) {
+        arreglo2[j] = arr[i];
+    }
+    
+    for (int i = 0; i < size; i++) {
+        arr[i] = arreglo2[i];
+    }
 }
+
 
 /*
 Ejercicio 3: Filtrar Números Pares

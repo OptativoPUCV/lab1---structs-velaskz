@@ -120,3 +120,14 @@ Tue 15 Aug 2023 07:23:07 PM UTC:
  tests:  0|4
 total_score: 30/70
 f7683f2
+Tue 15 Aug 2023 07:24:31 PM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:83:9: error: unused variable ‘j’ [-Werror=unused-variable]
+   83 |   int i,j;
+      |         ^
+cc1: all warnings being treated as errors
+Compilation failed
+397114f

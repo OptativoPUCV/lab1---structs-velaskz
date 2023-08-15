@@ -102,3 +102,15 @@ Tue 15 Aug 2023 06:01:30 PM UTC:
  tests:  0|4
 total_score: 30/70
 faeafad
+Tue 15 Aug 2023 07:22:59 PM UTC: 
+ exercises.c | 15 +++++++++++++--
+ 1 file changed, 13 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:85:19: error: ‘size’ undeclared (first use in this function); did you mean ‘size2’?
+   85 |   for (i = 0; i < size; i++){
+      |                   ^~~~
+      |                   size2
+exercises.c:85:19: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+5af11fd

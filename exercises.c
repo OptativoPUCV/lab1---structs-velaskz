@@ -23,7 +23,6 @@ int findMax(int arr[], int size) {
   
   return mayor; 
 }
-}
 
 /*
 Ejercicio 2: Invertir un Arreglo

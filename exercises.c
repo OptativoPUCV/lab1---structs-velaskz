@@ -114,19 +114,21 @@ int checkSorted(int arr[], int size) {
     return -1;
   }
 
-  int esAscendente = 0;
-  int esDescenente = 0;
+  int esAscendente = 1;
+  int esDescenente = 1;
   int i;
   
   for (i = 0; i < size; i++){
     if (arr[i] > arr[i + 1]){
-      esAscendente = 1;
+      esAscendente = 0;
+      break;
     }
   }
 
   for (i = 0; i < size; i++){
     if (arr[i] < arr[i + 1]){
-      esDescenente = 1;
+      esDescenente = 0;
+      break;
     }
   }
 

@@ -18,3 +18,21 @@ Tue 15 Aug 2023 02:33:33 AM UTC:
  tests:  0|6
 total_score: 10/70
 64eb77c
+Tue 15 Aug 2023 04:46:03 PM UTC: 
+ exercises.c | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:34:26: error: expected identifier or ‘(’ before ‘int’
+   34 |   for (int i = size - 1, int j = 0; i >= 0 && j < size2; i--, j++){
+      |                          ^~~
+exercises.c:34:47: error: ‘j’ undeclared (first use in this function)
+   34 |   for (int i = size - 1, int j = 0; i >= 0 && j < size2; i--, j++){
+      |                                               ^
+exercises.c:34:47: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:35:19: error: ‘arreglo’ undeclared (first use in this function); did you mean ‘arreglo2’?
+   35 |     arreglo2[j] = arreglo[i];
+      |                   ^~~~~~~
+      |                   arreglo2
+Compilation failed
+e14ed06

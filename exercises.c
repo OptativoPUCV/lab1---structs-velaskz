@@ -49,7 +49,7 @@ los números pares del arreglo original.
 int *filterEvenNumbers(int arr[], int size, int *newSize) {
   
   if (size <= 0){
-    return -1;
+    return NULL;
   }
 
   

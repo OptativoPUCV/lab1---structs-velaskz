@@ -256,3 +256,14 @@ Wed 16 Aug 2023 02:08:06 PM UTC:
  tests:  0|1
 total_score: 60/70
 6c76383
+Thu 17 Aug 2023 08:10:15 PM UTC: 
+ exercises.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:186:9: error: unused variable ‘newNodo’ [-Werror=unused-variable]
+  186 |   Nodo *newNodo = (Nodo *)malloc (sizeof(int(Nodo)));
+      |         ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+bcaa22a

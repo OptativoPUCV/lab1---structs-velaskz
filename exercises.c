@@ -183,6 +183,10 @@ typedef struct nodo {
 
 Nodo *crearListaEnlazada(int arr[], int size) { 
 
+  if (size == 0){
+    return NULL;
+  }
+    
   Nodo* primerNodo = NULL;
   Nodo* segundoNodo = NULL;
   

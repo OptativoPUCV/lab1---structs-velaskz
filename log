@@ -273,3 +273,17 @@ Thu 17 Aug 2023 08:10:34 PM UTC:
  tests:  0|1
 total_score: 60/70
 0509efa
+Thu 17 Aug 2023 08:28:38 PM UTC: 
+ exercises.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:188:10: error: array subscript ‘Nodo {aka struct nodo}[0]’ is partly outside array bounds of ‘unsigned char[1]’ [-Werror=array-bounds]
+  188 |   newNodo-> numero = arr[i++];
+      |          ^~
+exercises.c:187:27: note: referencing an object of size 1 allocated by ‘malloc’
+  187 |   Nodo *newNodo = (Nodo *)malloc (sizeof(int(Nodo)));
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+f171ca0

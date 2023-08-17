@@ -315,3 +315,23 @@ exercises.c:187:27: note: referencing an object of size 1 allocated by ‘malloc
 cc1: all warnings being treated as errors
 Compilation failed
 12b63a6
+Thu 17 Aug 2023 08:33:48 PM UTC: 
+ exercises.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:188:10: error: array subscript ‘Nodo {aka struct nodo}[0]’ is partly outside array bounds of ‘unsigned char[1]’ [-Werror=array-bounds]
+  188 |   newNodo->numero = arr[i++];
+      |          ^~
+exercises.c:187:27: note: referencing an object of size 1 allocated by ‘malloc’
+  187 |   Nodo *newNodo = (Nodo *)malloc (sizeof(int(Nodo)));
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+exercises.c:189:10: error: array subscript ‘Nodo {aka struct nodo}[0]’ is partly outside array bounds of ‘unsigned char[1]’ [-Werror=array-bounds]
+  189 |   newNodo->siguiente = NULL;
+      |          ^~
+exercises.c:187:27: note: referencing an object of size 1 allocated by ‘malloc’
+  187 |   Nodo *newNodo = (Nodo *)malloc (sizeof(int(Nodo)));
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+116f7bb

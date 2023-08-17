@@ -361,3 +361,17 @@ Thu 17 Aug 2023 08:59:28 PM UTC:
  tests:  0|1
 total_score: 60/70
 04b507c
+Thu 17 Aug 2023 09:02:30 PM UTC: 
+ exercises.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:187:9: error: unused variable ‘segundoNodo’ [-Werror=unused-variable]
+  187 |   Nodo* segundoNodo = NULL;
+      |         ^~~~~~~~~~~
+exercises.c:186:9: error: variable ‘primerNodo’ set but not used [-Werror=unused-but-set-variable]
+  186 |   Nodo* primerNodo = NULL;
+      |         ^~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+ed935ac

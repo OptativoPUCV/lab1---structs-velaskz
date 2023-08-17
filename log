@@ -355,3 +355,9 @@ exercises.c:186:27: note: referencing an object of size 1 allocated by ‘malloc
 cc1: all warnings being treated as errors
 Compilation failed
 6ca75d1
+Thu 17 Aug 2023 08:59:28 PM UTC: 
+ exercises.c | 13 +++++++++----
+ 1 file changed, 9 insertions(+), 4 deletions(-)
+ tests:  0|1
+total_score: 60/70
+04b507c

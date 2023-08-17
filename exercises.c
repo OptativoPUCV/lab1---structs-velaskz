@@ -184,5 +184,7 @@ typedef struct nodo {
 Nodo *crearListaEnlazada(int arr[], int size) { 
 
   Nodo *newNodo = (Nodo *)malloc (sizeof(int(Nodo)));
+
+  return newNodo;
   
   return NULL; }

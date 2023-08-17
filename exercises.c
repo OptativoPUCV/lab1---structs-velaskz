@@ -201,7 +201,7 @@ Nodo *crearListaEnlazada(int arr[], int size) {
     }
     else{
       segundoNodo->siguiente = nuevoNodo;
-      
+      segundoNodo = nuevoNodo;
     }
     
     

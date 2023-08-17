@@ -501,3 +501,21 @@ exercises.c:194:31: note: referencing an object of size 1 allocated by ‘malloc
 cc1: all warnings being treated as errors
 Compilation failed
 ae030a6
+Thu 17 Aug 2023 09:07:51 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:213:10: error: ‘nuevoNodo’ undeclared (first use in this function)
+  213 |   return nuevoNodo;
+      |          ^~~~~~~~~
+exercises.c:213:10: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:190:9: error: variable ‘primerNodo’ set but not used [-Werror=unused-but-set-variable]
+  190 |   Nodo* primerNodo = NULL;
+      |         ^~~~~~~~~~
+exercises.c:214:1: error: control reaches end of non-void function [-Werror=return-type]
+  214 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+b47c008

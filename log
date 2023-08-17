@@ -386,3 +386,17 @@ exercises.c:187:9: error: variable ‘segundoNodo’ set but not used [-Werror=u
 cc1: all warnings being treated as errors
 Compilation failed
 29c6682
+Thu 17 Aug 2023 09:03:12 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:187:9: error: variable ‘segundoNodo’ set but not used [-Werror=unused-but-set-variable]
+  187 |   Nodo* segundoNodo = NULL;
+      |         ^~~~~~~~~~~
+exercises.c:186:9: error: variable ‘primerNodo’ set but not used [-Werror=unused-but-set-variable]
+  186 |   Nodo* primerNodo = NULL;
+      |         ^~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+e76fb38

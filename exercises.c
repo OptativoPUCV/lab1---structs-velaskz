@@ -178,7 +178,7 @@ Recuerda reservar memoria dinámica para cada nodo usando malloc.
 
 typedef struct nodo {
   int numero;
-  struct nodo *siguiente; // puntero al siguiente nodo
+  struct nodo *siguiente; 
 } Nodo;
 
 Nodo *crearListaEnlazada(int arr[], int size) { 
@@ -193,8 +193,6 @@ Nodo *crearListaEnlazada(int arr[], int size) {
     for (int i = 0; i < size; i++) {
         Nodo* nuevoNodo = (Nodo*)malloc(sizeof(Nodo));
         if (nuevoNodo == NULL) {
-            // Manejo de error en la asignación de memoria
-            // Aquí debes liberar la memoria de los nodos creados anteriormente
             return NULL;
         }
 
